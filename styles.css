@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+
+.header h2{
+    color:hsl(186, 14%, 43%);
+    letter-spacing:10px;
+}
+
+.box{
+    background-color: white;
+    width:75%;
+    height:500px;
+    border-radius: 30px;
+}
+
+.side1{
+    width:50%;
+    height: 480px;
+}
+
+.side2{
+    width:50%;
+    margin: 35px;
+    border-radius: 30px;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.content{
+    display: flex;
+}
+
+.content-inner{
+    padding:35px;
+}
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.dollar-sign {
+    position: absolute;
+    top: 50%;
+    left:10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #000;
+    font-size: 20px;
+    color:hsl(184, 14%, 56%);
+}
+
+.input-container {
+    position: relative;
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-container input{
+    width:100%;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 6px;
+    color:hsl(184, 14%, 56%);
+    color:hsl(183, 100%, 15%);
+}
+
+.input-container input:focus{
+    border-color: #007bff;
+}
+
+  input[type="number"] {
+    padding-left: 20px; /* Add some left padding to make space for the dollar sign */
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border:2px solid hsl(172, 67%, 45%);
+}
+
+input[type="number"]::placeholder {
+    color:hsl(184, 14%, 56%);
+}
+
+.custom{
+    text-align: center;
+    color:hsl(183, 100%, 15%);
+}
+
+.percentage-selector1{
+    width:100%;
+    display: flex;
+    gap:20px;
+    margin-top: 10px;
+}
+
+.percentage-selector2{
+    width:100%;
+    display: flex;
+    gap:20px;
+    margin-top: 20px;
+}
+
+.percentage-card{
+    background-color: hsl(183, 100%, 15%);
+    width: 31%;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.percentage-card input{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 6px;
+}
+
+.percentage-card p{
+    padding:10px;
+}
+
+#percentage1,#percentage2,#percentage3,#percentage4,#percentage5{
+    transition: scale 0.2s;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#percentage1:hover,#percentage2:hover,#percentage3:hover,#percentage4:hover,#percentage5:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
+
+.margin-top{
+    margin-top: 40px;
+}
+
+.font-styling{
+    color:hsl(186, 14%, 43%);
+    font-weight: 600;
+}
+
+.padding{
+    padding: 50px;
+}
+
+.side2-part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first{
+    color: white;
+}
+
+.sub-class{
+    color:rgb(190, 190, 190);
+    font-size: 12px;
+}
+
+.second{
+    font-size: 30px;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+
+.btn{
+    width:100%;
+}
+
+.btn button{
+    width:100%;
+    padding: 15px;
+    border-radius: 6px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.margin-large{
+    margin-top: 150px;
+}
+
+#reset{
+    transition: scale 0.2s;
+    cursor: pointer;
+}
+
+#reset:hover{
+    scale:1.05;
+}
+
+.mobile-padding{
+    width: 100%;
+}
+
+.number-of-people{
+    display: flex;
+    justify-content: space-between;
+}
+
+.red{
+    color:red;
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .content {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    .header{
+        margin-top: 50px;
+    }
+
+    .main{
+        height: 100%;
+        justify-content: unset;
+    }
+
+    .box{
+        width: 100%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .side1{
+        width:100%;
+    }
+
+    .side2{
+        width: 90%;
+        margin: unset;
+        margin-bottom: 50px;
+    }
+
+    .margin-large{
+        margin-top: 50px;
+    }
+  }

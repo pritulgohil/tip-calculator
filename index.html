@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/x-icon" href="/images/calculator_1011812.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <h2>SPLI</h2>
+      <h2>TTER</h2>
+    </div>
+    <div class="box">
+      <div class="content">
+        <div class="side1">
+          <div class="content-inner">
+            <div class="part1">
+              <div class="bill-tag font-styling">
+                <p>Bill</p>
+              </div>
+              <div class="input-container">
+                <span class="dollar-sign"><img src="images/icon-dollar.svg" alt="dollar"></span>
+                <input type="number" id="bill-amount" placeholder="0">
+              </div>
+            </div>
+            <div class="part2 margin-top">
+              <div class="select-tip font-styling">
+                <p>Select Tip %</p>
+              </div>
+              <div class="percentage-selector1">
+                <div class="percentage-card" id="percentage1">
+                  <p id="value1">5%</p>
+                </div>
+                <div class="percentage-card" id="percentage2">
+                  <p>10%</p>
+                </div>
+                <div class="percentage-card" id="percentage3">
+                  <p>15%</p>
+                </div>
+              </div>
+              <div class="percentage-selector2">
+                <div class="percentage-card" id="percentage4">
+                  <p>25%</p>
+                </div>
+                <div class="percentage-card" id="percentage5">
+                  <p>50%</p>
+                </div>
+                <div class="percentage-card">
+                  <input type="number" id="percentage6" class="custom" placeholder="Custom">
+                </div>
+              </div>
+            </div>
+            <div class="part3 margin-top">
+              <div class="number-of-people font-styling">
+                <p>Number of People</p>
+                <p class="red" id="red">Can't be zero</p>
+              </div>
+              <div class="input-container">
+                <span class="dollar-sign"><img src="images/icon-person.svg" alt="icon-person"></span>
+                <input type="number" id="peeps" placeholder="1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side2">
+          <div class="padding">
+            <div class="side2-part1">
+              <div class="first">
+                <p>Tip Amount</p>
+                <p class="sub-class">/ Person</p>
+              </div>
+              <div class="second">
+                <p id="tipPerPerson">$0.00</p>
+              </div>
+            </div>
+            <div class="side2-part1 margin-top">
+              <div class="first">
+                <p>Total</p>
+                <p class="sub-class">/ Person</p>
+              </div>
+              <div class="second">
+                <p id="totalPerPerson">$0.00</p>
+              </div>
+            </div>
+            <div class="side2-part1 margin-large">
+              <div class="btn">
+                <button id="reset">RESET</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
