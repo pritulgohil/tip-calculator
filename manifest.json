@@ -1,0 +1,21 @@
+{
+  "short_name": "Tip Calculator",
+  "name": "Pritul's Tip Calculator",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "background_color": "white",
+  "theme_color": "#048BA8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/logo-large.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+        "src": "images/logo-small.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+  ]
+}
